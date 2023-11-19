@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Pixelated';
+    src: url('Pixelated.woff');
+}
+.text-font{
+    font-family: 'Pixelated';
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.box{
+    background-color: blanchedalmond;
+    width: 100px;
+    margin: auto;
+    width: 200px
+}
+
+.footer{
+    clear:both;
+    position: relative;
+    margin-top: 100%;
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 0;
+}
