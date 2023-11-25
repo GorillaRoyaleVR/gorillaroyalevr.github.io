@@ -5,8 +5,10 @@
 .text-font{
     font-family: 'Pixelated';
     font-size: 20px;
-    margin: 20px;
+    margin: auto;
     text-align: center;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .box{
@@ -21,4 +23,66 @@
     margin: auto;
     display: block;
     padding: 0;
+}
+
+.header{
+    background-color: var(--header);
+    width: 100%;
+    margin: 0;
+    display: block;
+    padding: 0;
+    align-items: left;
+    overflow: hidden;
+}
+
+.high-margin{
+    margin: 20px;
+}
+
+.nav-button{
+    text-align: center;
+    float: left;
+    margin: 20px
+}
+
+.button{
+    transition-duration: 0.2s;
+    background-color: var(--button);
+    border: 0;
+    cursor: pointer;
+    color: black;
+    border-radius: 8px;
+    width: 108px;
+    height: 70px;
+    line-height: 400%;
+}
+
+.button:hover{
+    background-color: var(--button-hover);
+    color:white;
+}
+
+body{
+    background-color: var(--background);
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.block {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.image{
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+}
+:root{
+    --background: rgb(0, 16, 46);
+    --header: rgb(43, 77, 51);
+    --button: blanchedalmond;
+    --button-hover: rgb(59, 53, 44);
 }
