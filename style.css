@@ -9,6 +9,7 @@ body{
     src: url('Pixelated.woff');
 }
 .text-font{
+    height: 100%;
     margin: auto;
     text-align: center;
     vertical-align: middle;
@@ -44,12 +45,12 @@ body{
 }
 
 .nav-button{
-    text-align: center;
     float: left;
     margin: 20px
 }
 
 .button{
+    text-align: center;
     transition-duration: 0.2s;
     background-color: var(--button);
     border: 0;
@@ -77,11 +78,14 @@ a{
 
 .block {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
+}
+.fade{
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
 }
+
 .image{
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
