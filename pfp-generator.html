@@ -4,26 +4,26 @@
         <meta content="Gorilla Royale" property="og:title" />
         <meta content="The best VR Battle Royale." property="og:description" />
         <meta content="https://gorillaroyalevr.com" property="og:url" />
-        <meta content="https://gorillaroyalevr.com/Images/Icon.png" property="og:image" />
+        <meta content="https://gorillaroyalevr.com/Icon.png" property="og:image" />
         <meta content="#53A817" data-react-helmet="true" name="theme-color" />
         <meta name="keywords" content ="gorillaroyalevr, gorilla royale vr download, gorillaroyale, gorilla royale, vr battle royale, gorilla locomotion battle royale, gorilla battle royale, battle royale vr gorilla" />
         <link rel = "icon" href = "https://gorillaroyalevr.com/Icon.png" type = "image/x-icon">
     </head>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <script src="loader.js"></script>
     <script src="PFP/pfp.js"></script>
     <script src="PFP/pfp-generator.js"></script>
-    <link rel="stylesheet" href="style.css">
     <body>
         <div>
             <div id="header"></div>
         </div>
-        <div class="box" style="margin-top: 20px; padding: 100px; height: 30px">
+        <div class="box" style="margin-top: 20px; padding: 100px; width: 90%; max-width: 200px; height: 30px">
             <div class="text-font" style="color:black;">
                 <p style="font-size: 50px; padding: 0; margin-top: -50;">
                     Pick a colour!
                 </p>
-                <div style="margin: auto;">
+                <div style="margin: auto; margin-top: -30px;">
                     <input id="r" onchange="OnColourChanged()" style="width: 10%" min="0" max="9" type="number" value="0">
                     <input id="g" onchange="OnColourChanged()" style="width: 10%" min="0" max="9" type="number" value="0">
                     <input id="b" onchange="OnColourChanged()" style="width: 10%" min="0" max="9" type="number" value="0">
