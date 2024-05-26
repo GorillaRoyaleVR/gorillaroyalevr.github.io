@@ -71,6 +71,15 @@ function GetColourButtons(){
     colourButtons.g = Math.floor(colourButtons.g);
     colourButtons.b = Math.floor(colourButtons.b);
 
+    if (colourButtons.r == undefined)
+        colourButtons.r = 0;
+
+    if (colourButtons.g == undefined)
+        colourButtons.g = 0;
+
+    if (colourButtons.b == undefined)
+        colourButtons.b = 0;
+
     return colourButtons;
 }
 
