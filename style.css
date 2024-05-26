@@ -8,6 +8,7 @@ body{
     font-family: 'Pixelated';
     src: url('Pixelated.woff');
 }
+
 .text-font{
     height: 100%;
     margin: auto;
@@ -20,7 +21,8 @@ body{
     background-color: blanchedalmond;
     width: 100px;
     margin: auto;
-    width: 400px
+    width: 400px;
+    border-radius: 10px;
 }
 
 .footer{
@@ -46,7 +48,9 @@ body{
 
 .nav-button{
     float: left;
-    margin: 20px
+    margin: 20px;
+    width: 108px;
+    height: 70px;
 }
 
 .button{
@@ -57,8 +61,6 @@ body{
     cursor: pointer;
     color: black;
     border-radius: 8px;
-    width: 108px;
-    height: 70px;
     line-height: 400%;
 }
 
@@ -95,4 +97,9 @@ a{
     --header: rgb(43, 77, 51);
     --button: blanchedalmond;
     --button-hover: rgb(59, 53, 44);
+}
+
+.pfp{
+    margin: auto;
+    border-radius: 8px;
 }
