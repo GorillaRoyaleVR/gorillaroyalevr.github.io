@@ -67,6 +67,10 @@ function GetColourButtons(){
     colourButtons.g = ConvertToColour(colourButtons.g, 9);
     colourButtons.b = ConvertToColour(colourButtons.b, 9);
 
+    colourButtons.r = Math.floor(colourButtons.r);
+    colourButtons.g = Math.floor(colourButtons.g);
+    colourButtons.b = Math.floor(colourButtons.b);
+
     return colourButtons;
 }
 
