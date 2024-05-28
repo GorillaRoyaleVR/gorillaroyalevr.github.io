@@ -33,13 +33,13 @@ async function LoadPFP(container){
 }
 
 function Download(id){
-    var colourButtons = GetColourButtons();
+    var colourButtons = GetColour();
     var image = pfps[id].Image.split("/").at(-1);
     window.open(`https://api.gorillaroyalevr.com/api/pfp/v1/${image}?r=${colourButtons.r}&g=${colourButtons.g}&b=${colourButtons.b}`)
 }
 
 function OnColourChanged(){
-    var colourButtons = GetColourButtons();
+    var colourButtons = GetColour();
 
     console.log(colourButtons);
 
@@ -52,35 +52,53 @@ function OnColourChanged(){
     }
 }
 
+function OnLoad(){
+    var colourButtons = GetColourButtons();
+    colourButtons.r.value = Math.floor(Math.random() * 9);
+    colourButtons.g.value = Math.floor(Math.random() * 9);
+    colourButtons.b.value = Math.floor(Math.random() * 9);
+}
+
 function GetColourButtons(){
     var colourButtons = {
-        r: parseInt(document.getElementById("r").value),
-        g: parseInt(document.getElementById("g").value),
-        b: parseInt(document.getElementById("b").value)
+        r: document.getElementById("r"),
+        g: document.getElementById("g"),
+        b: document.getElementById("b")
     }
 
-    colourButtons.r = Clamp(colourButtons.r, 9, 0);
-    colourButtons.g = Clamp(colourButtons.g, 9, 0);
-    colourButtons.b = Clamp(colourButtons.b, 9, 0);
-
-    colourButtons.r = ConvertToColour(colourButtons.r, 9);
-    colourButtons.g = ConvertToColour(colourButtons.g, 9);
-    colourButtons.b = ConvertToColour(colourButtons.b, 9);
-
-    colourButtons.r = Math.floor(colourButtons.r);
-    colourButtons.g = Math.floor(colourButtons.g);
-    colourButtons.b = Math.floor(colourButtons.b);
-
-    if (colourButtons.r == undefined)
-        colourButtons.r = 0;
-
-    if (colourButtons.g == undefined)
-        colourButtons.g = 0;
-
-    if (colourButtons.b == undefined)
-        colourButtons.b = 0;
-
     return colourButtons;
+}
+
+function GetColour(){
+    var colourButtons = GetColourButtons();
+    var colour = {
+        r: parseInt(colourButtons.r.value),
+        g: parseInt(colourButtons.g.value),
+        b: parseInt(colourButtons.b.value)
+    }
+
+    colour.r = Clamp(colour.r, 9, 0);
+    colour.g = Clamp(colour.g, 9, 0);
+    colour.b = Clamp(colour.b, 9, 0);
+
+    colour.r = ConvertToColour(colour.r, 9);
+    colour.g = ConvertToColour(colour.g, 9);
+    colour.b = ConvertToColour(colour.b, 9);
+
+    colour.r = Math.floor(colour.r);
+    colour.g = Math.floor(colour.g);
+    colour.b = Math.floor(colour.b);
+
+    if (colour.r == undefined)
+        colour.r = 0;
+
+    if (colour.g == undefined)
+        colour.g = 0;
+
+    if (colour.b == undefined)
+        colour.b = 0;
+
+    return colour;
 }
 
 function Clamp(value, max, min){
