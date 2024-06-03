@@ -50,5 +50,9 @@ var load = [
     {
         Image: "GorillaInterested.png",
         Creator: "Grizzly's brother"
+    },
+    {
+        Image: "GorillaFindsEpic.png",
+        Creator: "Honey Bee"
     }
 ]
