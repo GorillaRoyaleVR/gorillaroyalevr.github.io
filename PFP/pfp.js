@@ -58,5 +58,9 @@ var load = [
     {
         Image: "GorillaFunkyEars.png",
         Creator: "RoboCherry"
+    },
+    {
+        Image: "GorillaPixelWave.png",
+        Creator: "fr"
     }
 ]
