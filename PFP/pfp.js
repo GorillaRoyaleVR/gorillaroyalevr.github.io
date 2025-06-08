@@ -52,10 +52,6 @@ var load = [
         Creator: "Grizzly's brother"
     },
     {
-        Image: "GorillaFindsEpic.png",
-        Creator: "Honey Bee"
-    },
-    {
         Image: "GorillaFunkyEars.png",
         Creator: "RoboCherry"
     },
